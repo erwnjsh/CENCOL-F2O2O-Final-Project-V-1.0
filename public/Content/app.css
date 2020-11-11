@@ -25,6 +25,11 @@
     font-weight: 700 !important;
 }
 
+.main-text{
+    font-family: 'Poppins' !important;  
+    font-weight: 600 !important;
+}
+
 body {
     font-family: 'Poppins', sans-serif !important;
 }
