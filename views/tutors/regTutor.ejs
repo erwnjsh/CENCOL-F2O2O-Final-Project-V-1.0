@@ -5,51 +5,209 @@
 <main>
     <div class="uk-container my-5">
         <h1 class="main-text text-center">Become a Tutor</h1>
-        <h3 class="main-text text-center">and teach to a wider audience</h3>
-        
-        <div class="uk-card uk-card-default uk-card-hover">
-            <div>
-              <div class="uk-card-body">
+
 
               <!-- MESSAGE AREA -->
             
 
-              <img src="/Assets/images/Logo1.png" alt="" class="mx-auto d-block" style="height: 80px; width: 80px;">
-              <h2 class="text-center">Login</h2>
-  
-                <!-- BEGIN SECTION : FORM  -->
-                <form class="uk-form-horizontal my-5 w-50 d-block mx-auto" method="POST" autocomplete="off">
-  
-                  <div >
-                      <!-- USERNAME -->
-                      <div class="mb-3">
-                          <label class="uk-form-label uk-text-large" for="username">UserName</label>
-                          <div class="uk-form-controls">
-                              <input class="uk-form-large " id="username" type="text" placeholder="Username" name="username" required autofocus>
-                          </div>
-                      </div>
-  
-                       <!-- PASSWORD -->
-                       <div class="mb-3">
-                          <label class="uk-form-label uk-text-large" for="password">Password</label>
-                          <div class="uk-form-controls">
-                              <input class="uk-form-large " id="password" type="password" placeholder="Password" name="password" required>
-                          </div>
-                      </div>
-  
-                  </div>
+            <!-- //   <img src="/Assets/images/Logo1.png" alt="" class="mx-auto d-block" style="height: 80px; width: 80px;"> -->
 
-                  <!-- LOGIN AND CANCEL -->
-                  <div class="text-center mt-4">
-                      <button class="uk-button uk-button-primary " type="submit" id="sendButton"><span uk-icon="sign-in"></span> Login</button>
-                      <a class="uk-button uk-button-danger" href="/"><span class="uk-margin-small-right" uk-icon="close"></span> Cancel</a>
-                  </div>  
   
-                </form> 
-                <!-- END SECTION : FORM  -->
-              </div>
-            </div>
-          </div>
+               
+
+
+
+		<div  uk-grid class="uk-child-width-expand@s ">
+			<div class="uk-width-1-4 uk-visible@l" uk-sticky="offset: 160" class="uk-sticky uk-sticky-below uk-sticky-fixed" style="position: fixed; top: 160px; width: 200px;">
+		        <div class="uk-card uk-card-default uk-card-body" >
+		        	 <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+				        <li class="uk-nav-header mt-4">Navigation</li>
+				        <li><a href="#genInfo" uk-scroll>General Information</a></li>
+				        <li><a href="#servProv" uk-scroll>Services Provided</a></li>
+				        <li><a href="#accInfo" uk-scroll>Account Information</a></li>
+				        <li><a href="#profPic" uk-scroll>Profile Picture</a></li>
+				        <li class="uk-nav-divider"></li>
+				        <li><a href="#upload" uk-scroll>Register</a></li>
+				        <li class="uk-nav-divider"></li>
+				        <li><a href="index.html#CentForm">Return to Homepage</a></li>
+				    </ul>
+		        </div>
+		    </div>
+
+		    <div class="uk-width-3-4">
+				<form class="uk-form-stacked uk-margin-small" method="post">
+
+                    <div id="genInfo" class="uk-card uk-card-default uk-card-body mb-3"  uk-scrollspy="cls:uk-animation-fade; repeat: true">
+			        	<h2 class="main-text">General Information</h2>
+			        	
+					    <div class="uk-margin">
+					        <label class="uk-form-label uk-text-large main-text" for="txtcourseName">First Name</label>
+					        <div class="uk-form-controls">
+					            <input class="uk-input uk-form-large" id="firstName" name="firstName" type="text" placeholder="John / Jane" required>
+					        </div>
+                        </div>
+                        
+                        <div class="uk-margin">
+					        <label class="uk-form-label uk-text-large main-text" for="txtcourseName">Last Name</label>
+					        <div class="uk-form-controls">
+					            <input class="uk-input uk-form-large" id="lastName" name="lastName" type="text" placeholder="Doe" required>
+					        </div>
+                        </div>
+                        
+                        <div class="uk-margin">
+					        <label class="uk-form-label" for="txtcourseName">Phone Number</label>
+					        <div class="uk-form-controls">
+					            <input class="uk-input" id="txtcourseName" name="txtcourseName" type="text" placeholder="e.g. COMP213 or Web Programming">
+					        </div>
+                        </div>
+
+                        <div class="uk-margin">
+					        <div class="uk-form-label">Personal Background and Resume:</div>
+					        <textarea class="uk-textarea" id="txtSuggestions" name="txtSuggestions" rows="8"></textarea>
+                        </div> 
+                        
+                    </div>
+                    
+                    <div id="servProv" class="uk-card uk-card-default uk-card-body mb-3"  uk-scrollspy="cls:uk-animation-fade; repeat: true">
+			        	<h3 class="uk-card-title">Services Provided</h3>
+                        
+                        <div class="uk-margin">
+					        <label class="uk-form-label" for="lstSemester">Subject</label>
+					        <div class="uk-form-controls">
+					            <select class="uk-select" id="lstSemester" name="lstSemester">
+					            	<option hidden disabled selected value> -- Select an Option -- </option>
+					                <option value="Fall">Less than 6 Hours</option>
+					                <option value="Spring">Less than 12 Hours</option>
+					                <option value="Spring/Summer">24 Hours or More</option>
+					            </select>
+					        </div>
+					    </div>
+
+					    <div class="uk-margin">
+					        <label class="uk-form-label" for="lstSemester">Response Time</label>
+					        <div class="uk-form-controls">
+					            <select class="uk-select" id="lstSemester" name="lstSemester">
+					            	<option hidden disabled selected value> -- Select an Option -- </option>
+					                <option value="Fall">Less than 6 Hours</option>
+					                <option value="Spring">Less than 12 Hours</option>
+					                <option value="Spring/Summer">24 Hours or More</option>
+					            </select>
+					        </div>
+                        </div>
+                        
+                        <div class="uk-margin">
+					        <label class="uk-form-label" for="numCourseYear">Hourly Rate</label>
+					        <div class="uk-form-controls">
+					            <input class="uk-input" id="numCourseYear" name="numCourseYear" type="number" min="1966" max="2020" placeholder="Key in a year betwen 1966 - 2020">
+					        </div>
+					    </div>
+
+                        <div class="uk-margin">
+					        <div class="uk-form-label">Kinds of Classes</div>
+					        <div class="uk-form-controls uk-form-controls-text">
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="E"> Online&nbsp;&nbsp;</label> 
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="G"> Offline&nbsp;&nbsp;</label>
+					        </div>
+					    </div>
+
+                        <div class="uk-margin">
+					        <div class="uk-form-label">Preferred Days</div>
+					        <div class="uk-form-controls uk-form-controls-text">
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="E"> Excellent&nbsp;&nbsp;</label> 
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="G"> Good&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="F"> Fair&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="NS"> Not Satisfactory</label>
+					        </div>
+                        </div>
+                        
+                        <div class="uk-margin">
+					        <div class="uk-form-label">Preferred Hours</div>
+					        <div class="uk-form-controls uk-form-controls-text">
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="E"> Excellent&nbsp;&nbsp;</label> 
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="G"> Good&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="F"> Fair&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="NS"> Not Satisfactory</label>
+					        </div>
+                        </div>
+                        
+                        <div class="uk-margin">
+					        <div class="uk-form-label">Levels</div>
+					        <div class="uk-form-controls uk-form-controls-text">
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="E"> Excellent&nbsp;&nbsp;</label> 
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="G"> Good&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="F"> Fair&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="NS"> Not Satisfactory</label>
+					        </div>
+                        </div>
+                        
+                        <div class="uk-margin">
+					        <label class="uk-form-label" for="txtcourseName">Profile Banner</label>
+					        <div class="uk-form-controls">
+					            <input class="uk-input" id="txtcourseName" name="txtcourseName" type="text" placeholder="e.g. COMP213 or Web Programming">
+					        </div>
+                        </div>
+
+                        <div class="uk-margin">
+					        <div class="uk-form-label">Your Teaching Methodology:</div>
+					        <textarea class="uk-textarea" id="txtSuggestions" name="txtSuggestions" rows="8"></textarea>
+					    </div> 
+			    	</div>
+
+			        <div id="accInfo" class="uk-card uk-card-default uk-card-body mb-3"  uk-scrollspy="cls:uk-animation-fade; repeat: true">
+			        	<h3 class="uk-card-title">Account Information</h3>
+			        	
+					    <div class="uk-margin">
+					        <label class="uk-form-label" for="txtcourseName">Email</label>
+					        <div class="uk-form-controls">
+					            <input class="uk-input" id="txtcourseName" name="txtcourseName" type="text" placeholder="e.g. COMP213 or Web Programming">
+					        </div>
+					    </div>
+
+					    <div class="uk-margin">
+					        <label class="uk-form-label" for="txtInstructor">Password</label>
+					        <div class="uk-form-controls">
+					            <input class="uk-input" id="txtInstructor" name="courseName" type="text" placeholder="e.g. John/Jane Doe">
+					        </div>
+					    </div>
+
+                        <div class="uk-margin">
+					        <label class="uk-form-label" for="txtInstructor">Confirm Password</label>
+					        <div class="uk-form-controls">
+					            <input class="uk-input" id="txtInstructor" name="courseName" type="text" placeholder="e.g. John/Jane Doe">
+					        </div>
+					    </div>
+                    </div>	 
+                    
+                    <div id="profPic" class="uk-card uk-card-default uk-card-body mb-3"  uk-scrollspy="cls:uk-animation-fade; repeat: true">
+			        	<h3 class="uk-card-title">Profile Picture</h3>
+			        	
+					    <div class="uk-margin">
+					        <label class="uk-form-label" for="txtcourseName">Upload a Profile Pic</label>
+					        <div class="uk-form-controls">
+					            <input class="uk-input" id="txtcourseName" name="txtcourseName" type="text" placeholder="e.g. COMP213 or Web Programming">
+					        </div>
+					    </div>
+			    	</div>
+
+			    	<div id="upload" class="uk-card uk-card-default uk-card-body mb-5" uk-scrollspy="cls:uk-animation-fade; repeat: true">
+			        	<h3 class="mb-0 uk-card-title">You're Almost Done!</h3>
+			        	
+					    <div class="uk-margin">
+					        <button class="uk-button uk-button-default" type="submit" name="btnSubmit" value="Upload Questionnaire">
+					        	<span uk-icon="upload"></span>&nbsp;Upload Application
+					    	</button>
+					    	<button class="uk-button uk-button-default" type="reset" name="btnReset" value="Start Again">
+					    		<span uk-icon="file-edit"></span>&nbsp;Start Again
+					    	</button>
+					        <!-- <input class="uk-button uk-button-default" type="reset" name="btnReset" value="Start Again"> -->
+					    </div>
+			    	</div>
+
+		    	</form>
+		    </div>
+
+		</div>
+	</main>
         
     </div>
 
