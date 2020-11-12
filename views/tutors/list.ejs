@@ -1,0 +1,113 @@
+<%- include ../partials/header.ejs %>  
+
+<%- include ../partials/main_nav.ejs %>  
+
+<main>
+
+    <!-- <form action="" method="post"></form> -->
+
+    <div class="uk-container">
+        <h1 class="main-text text-center my-5">Find a Tutor</h1>
+
+        <div class=" mb-5 d-flex justify-content-center">
+
+            <div class="uk-inline pr-3">
+                <select class="uk-select uk-form-large main-text">
+                    <option>PE</option>
+                    <option>Math</option>
+                    <option>French</option>
+                    <option>ESL</option>
+                    <option>Coding</option>
+                    <option>Music</option>
+                    <option>Art</option>
+                    <option>Science</option>
+                </select>
+            </div>
+
+            
+    
+            <div class="uk-inline pr-3">
+                <button class="uk-button uk-button-default uk-form-large main-text" type="button">Range</button>
+                <div uk-drop="mode: click">
+                    <div class="uk-card uk-card-body uk-card-default">
+                        <input class="uk-range" type="range" value="20" min="0" max="100" step="1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-inline pr-3">
+                <button class="uk-button uk-button-default uk-form-large main-text" type="button">Location</button>
+                <div uk-drop="mode: click">
+                    <div class="uk-card uk-card-body uk-card-default">
+                        <label class="main-text"><input class="uk-checkbox" type="checkbox" checked> Online</label>
+                        <label class="main-text"><input class="uk-checkbox" type="checkbox"> Offline</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-inline pr-3">
+                <button class="uk-button uk-button-default uk-form-large main-text" type="button">Times available</button>
+                <div uk-drop="mode: click">
+                    <div class="uk-card uk-card-body uk-card-default">
+                        <ul class="uk-nav uk-dropdown-nav">
+                            <li class="">
+                                <label class="main-text"><input class="uk-checkbox" type="checkbox" checked> Morning</label>
+                            </li>
+                            <li>
+                                <label class="main-text"><input class="uk-checkbox" type="checkbox" checked> Afternoon</label>
+                            </li>
+                            <li>
+                                <label class="main-text"><input class="uk-checkbox" type="checkbox" checked> Evening</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-inline pr-3">
+                <button class="uk-button uk-button-default uk-form-large main-text" type="button">Days Preferred</button>
+                <div uk-drop="mode: click">
+                    <div class="uk-card uk-card-body uk-card-default">
+                        <ul class="uk-nav uk-dropdown-nav">
+                            <li>
+                                <label class="main-text"><input class="uk-checkbox" type="checkbox" checked> Monday</label>
+                            </li>
+                            <li>
+                                <label class="main-text"><input class="uk-checkbox" type="checkbox" checked> Tuesday</label>
+                            </li>
+                            <li>
+                                <label class="main-text"><input class="uk-checkbox" type="checkbox" checked> Wednesday</label>
+                            </li>
+                            <li>
+                                <label class="main-text"><input class="uk-checkbox" type="checkbox" checked> Thursday</label>
+                            </li>
+                            <li>
+                                <label class="main-text"><input class="uk-checkbox" type="checkbox" checked> Friday</label>
+                            </li>
+                            <li>
+                                <label class="main-text"><input class="uk-checkbox" type="checkbox" checked> Saturday</label>
+                            </li>
+                            <li>
+                                <label class="main-text"><input class="uk-checkbox" type="checkbox" checked> Sunday</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-inline pr-3">
+                <button class="uk-button uk-button-default uk-button-large main-text"><span uk-search-icon></span> Search</button>
+            </div>
+
+        </div>
+
+
+        
+
+    <%- include ../auth/login-modal.ejs %>   
+</main>
+
+
+<%- include ../partials/bottom_nav.ejs %>      
+
+<%- include ../partials/footer.ejs %>   

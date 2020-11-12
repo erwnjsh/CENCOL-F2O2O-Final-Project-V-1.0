@@ -16,10 +16,17 @@ router.get('/about', function(req, res, next) {
   res.render('about', { title: 'About' });
 });
 
+/* GET tutorlistPage page. */
+router.get('/list', function(req, res, next) {
+  res.render('tutors/list', { title: 'About' });
+});
+
+
 /* GET tutorSignUp page. */
 router.get('/TutorRegistration', function(req, res, next) {
-  res.render('auth/regTutor', { title: 'Sign up to be a tutor' });
+  res.render('tutors/regTutor', { title: 'Sign up to be a tutor' });
 });
+
 /* GET studentSignUp page. */
 router.get('/StudentRegistration', function(req, res, next) {
   res.render('auth/regStudent', { title: 'Sign up to be a tutor' });
