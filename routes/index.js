@@ -18,7 +18,7 @@ router.get('/about', function(req, res, next) {
 
 /* GET tutorlistPage page. */
 router.get('/list', function(req, res, next) {
-  res.render('tutors/list', { title: 'About' });
+  res.render('tutors/list', { title: 'Find a Tutor' });
 });
 
 
