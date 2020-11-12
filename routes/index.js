@@ -18,11 +18,11 @@ router.get('/about', function(req, res, next) {
 
 /* GET tutorSignUp page. */
 router.get('/TutorRegistration', function(req, res, next) {
-  res.render('regTutor', { title: 'Sign up to be a tutor' });
+  res.render('auth/regTutor', { title: 'Sign up to be a tutor' });
 });
 /* GET studentSignUp page. */
 router.get('/StudentRegistration', function(req, res, next) {
-  res.render('regStudent', { title: 'Sign up to be a tutor' });
+  res.render('auth/regStudent', { title: 'Sign up to be a tutor' });
 });
 
 module.exports = router;
